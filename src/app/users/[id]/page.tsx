@@ -1,5 +1,5 @@
-import CardList from "@/components/CardList";
-import { Badge } from "@/components/ui/badge";
+// import CardList from "@/components/CardList";
+// import { Badge } from "@/components/ui/badge";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -168,7 +168,7 @@ const SingleUserPage = () => {
         </div>
         {/* RIGHT */}
         <div className="w-full xl:w-2/3 space-y-6">
-          
+
           {/* CHART CONTAINER */}
           <div className="bg-primary-foreground p-4 rounded-lg">
             <h1 className="text-xl font-semibold">User Activity</h1>
