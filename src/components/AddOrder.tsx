@@ -82,7 +82,11 @@ const AddOrder = () => {
                   <FormItem>
                     <FormLabel>Status</FormLabel>
                     <FormControl>
-                      <Select>
+                      <Select
+                        onValueChange={field.onChange}
+                        value={field.value}
+                        defaultValue={field.value}
+                      >
                         <SelectTrigger>
                           <SelectValue placeholder="Select a status" />
                         </SelectTrigger>
@@ -94,13 +98,12 @@ const AddOrder = () => {
                         </SelectContent>
                       </Select>
                     </FormControl>
-                    <FormDescription>
-                      Enter the status of the order.
-                    </FormDescription>
+                    <FormDescription>Enter the status of the order.</FormDescription>
                     <FormMessage />
                   </FormItem>
                 )}
               />
+
               <Button type="submit">Submit</Button>
             </form>
           </Form>
